@@ -23,7 +23,7 @@ def login():
     # Procesa el formulario solo si es válido y fue enviado por POST
     if form.validate_on_submit():
         email = form.email.data
-        password = form.password.data
+        password = form.password.data 
         # Busca el usuario por email
         usuario = Usuario.query.filter_by(email=email).first()
 

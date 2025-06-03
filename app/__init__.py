@@ -54,3 +54,5 @@ def create_app():
 # ----- EXPORTACIÓN PARA USO EXTERNO -----
 # Permite importar 'db' desde otros módulos con: from app import db
 __all__ = ['db']
+
+

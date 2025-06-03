@@ -563,7 +563,7 @@ CREATE TABLE `usuarios` (
   `email` varchar(100) NOT NULL,
   `direccion` varchar(100) NOT NULL,
   `telefono` varchar(15) DEFAULT NULL,
-  `password` varchar(100) NOT NULL,
+  `password` varchar(256) NOT NULL,
   `id_rol` int DEFAULT NULL,
   PRIMARY KEY (`id_usuario`),
   UNIQUE KEY `email` (`email`),

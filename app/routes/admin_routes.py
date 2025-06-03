@@ -8,7 +8,7 @@ admin_bp = Blueprint('admin', __name__, url_prefix='/admin')
 # ----- RUTA: PANEL DE ADMINISTRACIÓN -----
 @admin_bp.route('/dashboard')
 @login_required  # Requiere que el usuario haya iniciado sesión
-def dashboard():
+def dashboard():#funcion de dashboard
     
     #Muestra el panel principal del administrador.
     #Solo accesible para usuarios autenticados.

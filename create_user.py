@@ -10,15 +10,15 @@ app = create_app()
 
 with app.app_context():
     nuevo_usuario = Usuario(
-        nombre="Admin",
+        nombre="Admin2",
         apellido="De Prueba",
-        email="admin@example.com",
+        email="admin2@example.com",
         direccion="Calle Falsa 123",
         telefono="123456789",
         id_rol=3  # Asegúrate de que el rol con id_rol=1 exista en la tabla `roles`
     )
 
-    nuevo_usuario.set_password("123")  # Encriptar la contraseña
+    nuevo_usuario.set_password("1234")  # Encriptar la contraseña
     db.session.add(nuevo_usuario)
     
     try:
